@@ -1,0 +1,12 @@
+c:\users\roman\documents\visual studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\obj\Debug\OnlineDiarySystemWebWpp.csprojResolveAssemblyReference.cache
+c:\users\roman\documents\visual studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\bin\OnlineDiarySystemWebWpp.dll.config
+c:\users\roman\documents\visual studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\bin\OnlineDiarySystemWebWpp.dll
+c:\users\roman\documents\visual studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\bin\OnlineDiarySystemWebWpp.pdb
+c:\users\roman\documents\visual studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\obj\Debug\OnlineDiarySystemWebWpp.dll
+c:\users\roman\documents\visual studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\obj\Debug\OnlineDiarySystemWebWpp.pdb
+E:\ffffffffffffff\Visual Studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\bin\OnlineDiarySystemWebWpp.dll.config
+E:\ffffffffffffff\Visual Studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\bin\OnlineDiarySystemWebWpp.dll
+E:\ffffffffffffff\Visual Studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\bin\OnlineDiarySystemWebWpp.pdb
+E:\ffffffffffffff\Visual Studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\obj\Debug\OnlineDiarySystemWebWpp.csprojResolveAssemblyReference.cache
+E:\ffffffffffffff\Visual Studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\obj\Debug\OnlineDiarySystemWebWpp.dll
+E:\ffffffffffffff\Visual Studio 2013\Projects\OnlineDiarySystemWebWpp\OnlineDiarySystemWebWpp\obj\Debug\OnlineDiarySystemWebWpp.pdb

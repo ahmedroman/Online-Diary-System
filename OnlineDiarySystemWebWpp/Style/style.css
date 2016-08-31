@@ -1,0 +1,804 @@
+﻿html {
+    background-color: rgb(220, 220, 220);
+}
+
+form, body, html, header, div, p, span, img, a, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgb(220, 220, 220);
+    font-family: 'Lucida Bright',sans-serif;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 60px;
+    background-color: rgb(68, 161, 149);
+    box-shadow: 1px 0 5px 1px rgba(0,0,0,.3);
+    padding: 0 10%;
+}
+
+    header > .logout > input {
+        cursor: pointer;
+        background: none !important;
+        border: none;
+        font: inherit;
+        padding: 0;
+        color: inherit;
+    }
+
+    header p {
+        display: inline-block;
+        line-height: 60px;
+        padding: 0 1.3em;
+        color: white;
+    }
+
+    header .home {
+        float: left;
+    }
+
+    header .logout {
+        float: right;
+    }
+
+    header .searchTextbox {
+        float: right;
+        margin-right:100px;
+    }
+
+    header .profile {
+        float: right;
+    }
+.searchTextbox input[type="text"] {
+    font-size:100%;
+    height:30px;
+   width:300px;
+   bottom:5px;
+    position: relative;
+    border-radius:4px;
+    
+}
+.searchTextbox input[type="submit"] {
+    cursor:pointer;
+    bottom:-4px;
+    position: relative;
+    width:29px;
+    height:29px;
+    border:none;
+    border-radius:2px;
+    box-shadow:0 0 1px 2px rgba(10,10,10,.1); 
+    background: url(../Images/sf.png) no-repeat rgba(240,240,240,1);
+    background-position: center;
+
+}
+.searchTextbox input[type="submit"]:active,
+.searchTextbox input[type="submit"]:focus,
+.searchTextbox input[type="submit"]:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+
+
+header a {
+    text-decoration: none;
+}
+
+    header a:hover, header > .logout > input:hover {
+        text-decoration: underline;
+    }
+
+#leftSidebar {
+    margin-top: 60px;
+    float: left;
+    width: 20%;
+}
+
+    #leftSidebar aside {
+        width: 20%;
+        position: fixed;
+        min-height: 550px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: rgb(50, 174, 158);
+        border-radius: 0 3px 3px 0;
+        text-align: center;
+    }
+
+#mainPage {
+    margin-top: 60px;
+    width: 78%;
+    float: right;
+}
+
+#postDiv {
+    margin: 20px 10px 10px 20px;
+    width: 84%;
+    background-color: rgb(50, 174, 158);
+    padding: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+    #postDiv textarea {
+        margin: 1px;
+        display: block;
+        resize: none;
+        width: 100%;
+        height: 100px;
+        border-radius: 3px;
+        font-size: 120%;
+        box-shadow: 1px 1px 10px -5px rgba(0,0,0,0.75);
+    }
+
+    #postDiv input {
+        margin-top: 10px;
+        border: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 3px;
+        background: rgb(16,104,102);
+        float: right;
+        color: white;
+        cursor: pointer;
+    }
+
+        #postDiv input:hover {
+            box-shadow: 1px 1px 5px -5px rgba(0,0,0,0.75);
+            background: rgb(13,82,80);
+            color: white;
+        }
+
+.postGrid, .postGrid tr, .postGrid td {
+    border: none;
+}
+
+.profile-show-post {
+    width: 100%;
+}
+
+.postGrid, .postGrid tbody {
+    display: block;
+}
+
+    .postGrid tr {
+        display: block;
+        max-width: 90%;
+        display: block;
+        background-color: rgb(144, 144, 144);
+        border-radius: 1.5px;
+        margin: 20px;
+        padding: 15px;
+        box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1);
+    }
+
+    .postGrid td {
+        display: block;
+        padding: 10px;
+    }
+
+        .postGrid td:nth-child(1) {
+            min-width: 50px;
+        }
+
+        .postGrid td:nth-child(3) {
+            float: right;
+        }
+
+        .postGrid td:nth-child(2) {
+            width: 90%;
+            color: black;
+            word-break: break-word;
+        }
+
+
+
+        .postGrid td:nth-child(4) {
+        }
+
+
+/* # Login From*/
+.inputForm {
+    border-radius: 6px;
+    width: 350px;
+    margin: 6.5% auto;
+    padding: 0px 0 0;
+    background-color: rgba(30,30,30,.8);
+}
+
+.loginForm {
+    height: 270px;
+}
+
+.registerForm {
+    height: 440px;
+}
+
+.loginHeader {
+    line-height: 50px;
+    font-size: 120%;
+    letter-spacing: 3px;
+    color: white;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    background-color: rgb(50, 174, 158);
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,.1);
+}
+
+.loginMain {
+    margin-top: 40px;
+}
+
+.registerMain {
+    padding-top: 5px;
+    position: relative;
+}
+
+.loginFooter {
+    padding: 0 50px;
+    line-height: 50px;
+    position: relative;
+    top: 23px;
+    background-color: rgb(50, 174, 158);
+    border-radius: 0 0 6px 6px;
+}
+
+    .loginFooter input {
+        font-family: Montserrat;
+        float: right;
+        font-size: 110%;
+        margin: 7px 0px 0 0;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(37,127,115);
+        width: 100px;
+        height: 35px;
+        cursor: pointer;
+        color: white;
+    }
+
+        .loginFooter input:hover {
+            background-color: rgb(32,112,101);
+        }
+
+.inputTextbox input[type="text"], .inputTextbox input[type="password"], select {
+    font-size: 97%;
+    height: 30px;
+    display: block;
+    width: 70%;
+    border-radius: 3px;
+    border: 1.5px solid rgba(138, 138, 138, 0.30);
+    box-shadow: inset 0 0 3px 1px rgba(138, 138, 138, 0.20);
+}
+
+select {
+    height: 35px;
+}
+
+.loginMain input[type="text"], .loginMain input[type="password"] {
+    margin: 25px auto;
+}
+
+.registerMain input[type="text"], .registerMain input[type="password"], select {
+    margin: 10px auto;
+}
+
+/* # Validation*/
+.loginMain, .registerMain {
+    position: relative;
+}
+
+.passwordValidate p, .usernameValidate p,
+.passwordValidateReg p, .usernameValidateReg p,
+.nameValidate p, .emailValidate p, .DOBValidate p, .genderValidate p, .confirmPasswordValidate p {
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+
+.passwordValidate :before, .usernameValidate :before,
+.passwordValidateReg :before, .usernameValidateReg :before,
+.nameValidate :before, .emailValidate:before, .DOBValidate :before,
+.genderValidate:before, .confirmPasswordValidate:before {
+    border-right: 15px solid rgba(200,200,200,1);
+    border-top: 14px solid transparent;
+    border-bottom: 20px solid transparent;
+    content: "";
+    height: 0;
+    left: -15px;
+    position: absolute;
+    top: 0px;
+    width: 0;
+}
+
+.usernameValidate, .passwordValidate,
+.usernameValidateReg, .passwordValidateReg,
+.nameValidate, .emailValidate, .DOBValidate, .genderValidate, .confirmPasswordValidate {
+    width: 250px;
+    left: 330px;
+    line-height: 2.1em;
+    position: absolute;
+    background-color: rgba(200,200,200,1);
+    box-shadow: 1px 1px 1px 1px rgba(100,100,100,1);
+    border-radius: 0 1px 1px 0;
+    display: none;
+}
+
+.usernameValidate {
+    top: -4px;
+}
+
+.passwordValidate {
+    top: 56px;
+}
+
+.nameValidate {
+    top: 8px;
+}
+
+.emailValidate {
+    top: 53px;
+}
+
+.usernameValidateReg {
+    top: 98px;
+}
+
+.passwordValidateReg {
+    top: 143px;
+}
+
+.confirmPasswordValidate {
+    top: 188px;
+}
+
+.DOBValidate {
+    top: 233px;
+}
+
+.genderValidate {
+    top: 278px;
+}
+
+/*# Profile Page*/
+
+.mainProfilePage {
+    background-color: rgba(0,150,150,1);
+    margin-top: 75px;
+}
+
+.leftProfileArea {
+    position: fixed;
+    background-color: rgba(77,186,166,1);
+    margin: 0 0 10px 16.5%;
+    float: left;
+    width: 17%;
+    min-height: 570px;
+}
+
+.fullButton {
+    background-color: rgb(56, 143, 126);
+    display: block;
+    line-height: 2.2em;
+    margin: 0em 0 .5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.halfButton {
+    background-color: rgb(56, 143, 126);
+    display: inline-block;
+    width: 46%;
+    margin-left: .3em;
+    line-height: 2.2em;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.leftProfileArea a.edit-profile-button {
+    margin: 0px;
+}
+
+.leftProfileArea a:hover {
+    background-color: rgb(37, 108, 95);
+    text-decoration: underline;
+}
+
+.leftProfileArea p {
+    color: rgb(35,35,35);
+    background-color: rgba(80,162,146,1);
+    margin: .5em 0 .5em 0;
+}
+
+    .leftProfileArea p span {
+        display: block;
+        padding: 0 1em;
+    }
+
+        .leftProfileArea p span:nth-child(1) {
+            border-bottom: 1px solid rgba(200,200,200,.5);
+        }
+.proPic {
+
+    position:relative;
+
+}
+.proPic img {
+    display:inline-block;
+}
+    .afterImgDiv {
+        overflow:hidden;
+        bottom:0px;
+        position:absolute;
+        cursor:pointer;
+        height:70px;
+        width:100%;
+        transition:all .3s;
+    }
+        .afterImgDiv > input{
+            padding-bottom:.1em;
+            visibility:hidden;
+            width:100%;
+            margin:1em;
+            cursor:pointer;
+        }
+        .afterImgDiv > input[type="submit"]{
+            width:90%;
+            height:25px;
+            margin-top:-1em;
+            word-break:break-all;
+        }
+        .afterImgDiv:hover {
+        background-color:rgba(0, 0, 0, 0.70);
+       
+        }
+    .afterImgDiv:hover > input  {
+        visibility:visible;
+        
+         }
+.mainProfilePosstArea {
+    margin-left: 35%;
+    float: left;
+    background-color: rgb(209, 209, 209);
+    width: 50%;
+    min-height: 580px;
+}
+/*# Post*/
+.profilePostArea {
+    background-color: rgba(150,150,150,1);
+    overflow: hidden;
+    /*margin:1em;
+    border-radius:3px;*/
+}
+
+    .profilePostArea textarea {
+        margin: 1em;
+        resize: none;
+        width: 95%;
+        font-size: 110%;
+        border-radius: 3px;
+        height: 80px;
+    }
+
+.visibilityDiv {
+    float: right;
+    right: 240px;
+    bottom: 19px;
+    position: relative;
+}
+
+    .visibilityDiv > label {
+        position: absolute;
+        background-color: rgb(82, 82, 82);
+        height: 30px;
+        width: 100px;
+        border-radius: 30px;
+        cursor:pointer;
+    }
+
+
+        .visibilityDiv > label:before {
+            content: "Public";
+            font-size: 1em;
+            line-height: 30px;
+            text-align: center;
+            margin-left: 20px;
+            transition: all .1s;
+            color: white;
+        }
+
+        .visibilityDiv > label:after {
+            position: absolute;
+            top: 2px;
+            left: 72px;
+            content: "";
+            height: 26px;
+            width: 26px;
+            border-radius: 50px;
+            background-color: white;
+            transition:all .1s;
+        }
+
+    .visibilityDiv > input[type="checkbox"] {
+        visibility: hidden;
+    }
+        .visibilityDiv > input[type="checkbox"]:checked + label:after {
+            left:2px;
+        }
+        .visibilityDiv > input[type="checkbox"]:checked + label:before {
+            content:"Private";
+            margin-left:2em;
+        }
+.profilePostArea input[type="submit"] {
+    font-size:1em;
+    letter-spacing:3px;
+    margin: 0 1em 1em 0;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    /*background: rgb(16,104,102);*/
+    background: rgb(83, 83, 83);
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+    .profilePostArea input[type="submit"]:hover {
+        box-shadow: 1px 1px 5px -5px rgba(0,0,0,0.75);
+        background: rgb(60, 60, 60);
+        color: white;
+    }
+
+/*# Edit Profile*/
+.editHeader img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.inputEditForm {
+    border-radius: 6px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 0px 0 0;
+    background-color: rgba(30,30,30,.8);
+    margin-top: 80px;
+}
+
+.editForm {
+    height: 560px;
+}
+
+.editHeader {
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    background-color: rgb(50, 174, 158);
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,.1);
+}
+
+
+.editMain {
+    padding-top: 5px;
+    position: relative;
+}
+
+.editFooter {
+    padding: 0 50px;
+    line-height: 50px;
+    position: relative;
+    background-color: rgb(50, 174, 158);
+    border-radius: 0 0 6px 6px;
+}
+
+    .editFooter input {
+        font-family: Montserrat;
+        float: right;
+        font-size: 110%;
+        margin: 7px 0px 0 0;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(37,127,115);
+        width: 100px;
+        height: 35px;
+        cursor: pointer;
+        color: white;
+    }
+
+        .editFooter input:hover {
+            background-color: rgb(32,112,101);
+        }
+
+.inputEditTextbox input[type="text"], .inputEditTextbox input[type="password"], select {
+    font-size: 97%;
+    height: 35px;
+    display: block;
+    width: 70%;
+    border-radius: 3px;
+    border: 1.5px solid rgba(138, 138, 138, 0.30);
+    box-shadow: inset 0 0 3px 1px rgba(138, 138, 138, 0.20);
+}
+
+select {
+    height: 35px;
+}
+
+.editMain input[type="text"], .editMain input[type="password"], select {
+    margin: 10px auto;
+}
+
+/*# Search */
+
+.searchMain {
+    margin-top: 80px;
+}
+
+.searchTable {
+    border: 0px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+    .searchTable tbody {
+        display: block;
+        border: 0px;
+    }
+
+    .searchTable tr img {
+        width: 140px;
+        height: 140px;
+        display: block;
+    }
+
+    .searchTable tr {
+        background-color: rgba(100,100,100,1);
+        display: block;
+        border: 0px;
+        margin: 3em 0;
+        border-radius: 2px;
+    }
+
+    .searchTable td {
+        width: 300px;
+        border: 0px;
+    }
+
+        .searchTable td:nth-child(1) {
+            width: 300px;
+            border: 0px;
+            background-color: rgb(77, 76, 76);
+        }
+
+        .searchTable td a {
+            margin: 1em;
+            display: block;
+            padding: 1em;
+            width: 120px;
+            line-height: 15px;
+            text-align: center;
+            border-radius: 3px;
+            background-color: rgb(50, 174, 158);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+            .searchTable td a:hover {
+                background-color: rgb(54, 150, 137);
+                text-decoration: underline;
+            }
+
+/*# Comment Area*/
+.commentArea {
+    width: 600px;
+    margin: 80px auto;
+}
+
+.commentPostArea {
+    overflow: hidden;
+    background-color: rgb(147, 147, 147);
+    padding: 1em 2em;
+    border-radius: 3px;
+}
+
+    .commentPostArea a:nth-child(1) {
+    }
+
+    .commentPostArea a:nth-child(2) {
+        float: right;
+    }
+
+.deleteStyle {
+    position: relative;
+    top: -11px;
+    float: right;
+}
+
+.commentPostArea span {
+    display: block;
+    margin-top: 1em;
+}
+
+.comments {
+    background-color: rgb(160, 160, 160);
+    padding: 0px 1em;
+    border-radius: 3px;
+}
+
+    .comments input[type="text"] {
+        width: 70%;
+        margin: 1em .5em 1em 1em;
+        line-height: 1.5em;
+        border-radius: 2px;
+    }
+
+    .comments input[type="submit"] {
+        width: 20%;
+        margin: 1em 1em 1em .5em;
+        line-height: 1.5em;
+        border-radius: 2px;
+    }
+
+.commentTable {
+    border: none;
+    display: block;
+    padding: 0 1em;
+}
+
+    .commentTable tbody {
+        display: block;
+        border: none;
+    }
+
+    .commentTable tr {
+        padding: 1em 0;
+        display: block;
+        border: none;
+        border-bottom: 1px solid rgb(122, 122, 122);
+    }
+
+        .commentTable tr:last-child {
+            border: none;
+        }
+
+    .commentTable td {
+        border: none;
+        word-break: break-word;
+    }
+
+        .commentTable td:nth-child(1) {
+            border: none;
+            width: 20%;
+            word-break: break-word;
+        }
+
+        .commentTable td:nth-child(2) {
+            border: none;
+            width: 50%;
+            word-break: break-word;
+        }
+
+.dateStyle {
+    text-decoration: none;
+}
+
+    .dateStyle:hover {
+        text-decoration: underline;
+    }
